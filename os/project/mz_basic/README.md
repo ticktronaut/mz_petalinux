@@ -19,7 +19,9 @@ petalinux-package  --boot --fsbl $MZPL/os/project/mz_basic/components/plnx_works
 sudo cp $MZPL/os/project/mz_basic/images/linux/image.ub $MZPL/os/project/mz_basic/images/linux/BOOT.BIN <location-to-sd-card>/boot -i
 ```
 
-Test the openAMP application
+# Boot the image and test the openAMP applications 
+
+Boot the image and do following tests:
 
 ```shell
 echo matmul > /sys/class/remoteproc/remoteproc0/firmware
@@ -34,3 +36,8 @@ linuxmatmul
 ```shell
 modprobe -r rpmsg_user_dev_driver
 echo stop > /sys/class/remoteproc/remoteproc0/state
+
+To check which CPUs are ocupied by the Linux kernel use the following command:
+```shell
+cat /proc/cpuinfo
+```
