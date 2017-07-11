@@ -69,7 +69,7 @@ Install petalinux to a directory of choice, in this case mz\_petalinux/os/setup
 ``` 
 
 ```shell
-source $MZPL/os/setup/settings
+source $MZPL/os/setup/settings.sh
 ```
 
 ## Patch Petalinux
