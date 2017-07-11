@@ -128,7 +128,7 @@ cd mz_basic
 ```
 
 ```bash
-petalinux-config --get-hw-description=/home/usappz/make/code_projects/microzed_2017_1/vivado/hw/mz_basic_project/mz_basic_project.sdk -v
+petalinux-config --get-hw-description=$MZPL/hw/mz_base/mz_base.sdk -v
 ```
 
 Following configs are done in reference to [*UG1186 (v2017.1)*](http://www.xilinx.com/support/documentation/sw_manuals/xilinx2017_1/ug1186-zynq-openamp-gsg.pdf):
