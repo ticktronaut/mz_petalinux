@@ -157,8 +157,8 @@ Device Drivers --->
 
 ```
 Device Drivers --->
-  Remoteproc drivers --->
-# for R5:
+    Remoteproc drivers --->
+  # for R5:
   <M> ZynqMP_r5 remoteproc support
   # for Zynq A9
   <M> Support ZYNQ remoteproc 
