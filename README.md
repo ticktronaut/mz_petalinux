@@ -350,7 +350,7 @@ xsdk
 5. Integrate binaries to your petalinux-installation 
 
     ```shell
-    cd $MZPL/os/project/mz_base
+    cd $MZPL/os/project/mz_basic
     ```
 
     ```shell
@@ -358,7 +358,7 @@ xsdk
     ```
 
     ```shell
-    vi project-spec/meta-user/recipes-apps/<myfirmware>/matmul.bb 
+    vi project-spec/meta-user/recipes-apps/matmul/matmul.bb 
    ```
 
     ```
@@ -368,16 +368,20 @@ xsdk
     LIC_FILES_CHKSUM =
     "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
-    SRC_URI = "file://<myfirmware>"
+    SRC_URI = "file://matmul"
     S = "${WORKDIR}"
     INSANE_SKIP_${PN} = "arch"
 
     do_install() {
     install -d ${D}/lib/firmware
-    install -m 0644 ${S}/<myfirmware> ${D}/lib/firmware/<myfirmware>
+    install -m 0644 ${S}/matmul ${D}/lib/firmware/matmul
     }
   
-    FILES_${PN} = "/lib/firmware/<myfirmware>"
+    FILES_${PN} = "/lib/firmware/matmul"
+    ```
+
+    ```shell
+    cp $MZPL/sw/matrix_multiplication_demo_custom/Debug/matrix_multiplication_demo_custom.elf $MZPL/os/project/mz_basic/project-spec/meta-user/recipes-apps/matmul/files/matmul -i
     ```
 
     ```shell
@@ -437,6 +441,10 @@ xsdk
 
       ```shell
       petalinux-create -t apps --template install -n linuxmatmul --enable
+      ```
+
+      ```shell
+      cp $MZPL/sw/matrix_multiplication_demo_linux_app/Debug/matrix_multiplication_demo_linux_app.elf $MZPL/os/project/mz_basic/project-spec/meta-user/recipes-apps/linuxmatmul/files/linuxmatmul -i
       ```
 
       ```shell
