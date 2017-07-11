@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/usappz/bricks-project/platforms/microzed/mz_petalinux/sw/openamp_freertos_bsp/ps7_cortexa9_1/libsrc/openamp_v1_3/src/open-amp/lib/remoteproc/drivers/zynq_a9_trampoline.S
+

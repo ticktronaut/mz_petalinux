@@ -1,0 +1,1 @@
+/home/usappz/bricks-project/platforms/microzed/mz_petalinux/sw/openamp_freertos_bsp/ps7_cortexa9_1/libsrc/openamp_v1_3/build_openamp/lib/CMakeFiles/open_amp-static.dir

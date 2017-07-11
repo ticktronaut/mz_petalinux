@@ -1,0 +1,17 @@
+The target system is: FreeRTOS -  - arm
+The host system is: Linux - 4.2.0-42-generic - x86_64
+Determining if files stdatomic.h exist passed with the following output:
+Change Dir: /home/usappz/bricks-project/platforms/microzed/mz_petalinux/sw/openamp_freertos_bsp/ps7_cortexa9_1/libsrc/libmetal_v1_2/build_libmetal/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e3f0b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e3f0b.dir/build.make CMakeFiles/cmTC_e3f0b.dir/build
+make[1]: Verzeichnis »/home/usappz/bricks-project/platforms/microzed/mz_petalinux/sw/openamp_freertos_bsp/ps7_cortexa9_1/libsrc/libmetal_v1_2/build_libmetal/CMakeFiles/CMakeTmp« wird betreten
+Building C object CMakeFiles/cmTC_e3f0b.dir/CheckIncludeFiles.c.obj
+/opt/Xilinx/SDK/2017.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/arm-none-eabi-gcc   -O2 -c -DUSE_AMP=1 -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -DUNDEFINE_FILE_OPS -I/home/usappz/bricks-project/platforms/microzed/mz_petalinux/sw/openamp_freertos_bsp/ps7_cortexa9_1/include -c   -o CMakeFiles/cmTC_e3f0b.dir/CheckIncludeFiles.c.obj   -c /home/usappz/bricks-project/platforms/microzed/mz_petalinux/sw/openamp_freertos_bsp/ps7_cortexa9_1/libsrc/libmetal_v1_2/build_libmetal/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_e3f0b
+/opt/Xilinx/SDK/2017.1/tps/lnx64/cmake-3.3.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3f0b.dir/link.txt --verbose=1
+/opt/Xilinx/SDK/2017.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/arm-none-eabi-gcc  -O2 -c -DUSE_AMP=1 -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra -DUNDEFINE_FILE_OPS -I/home/usappz/bricks-project/platforms/microzed/mz_petalinux/sw/openamp_freertos_bsp/ps7_cortexa9_1/include -c    CMakeFiles/cmTC_e3f0b.dir/CheckIncludeFiles.c.obj  -o cmTC_e3f0b  
+arm-none-eabi-gcc: warning: CMakeFiles/cmTC_e3f0b.dir/CheckIncludeFiles.c.obj: linker input file unused because linking not done
+make[1]: Verzeichnis »/home/usappz/bricks-project/platforms/microzed/mz_petalinux/sw/openamp_freertos_bsp/ps7_cortexa9_1/libsrc/libmetal_v1_2/build_libmetal/CMakeFiles/CMakeTmp« wird verlassen
+
+
