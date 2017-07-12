@@ -433,7 +433,33 @@ xsdk
       cat /usr/src/debug/rpmsg-mat-mul/1.0-r0/mat_mul_demo.c
       ```
 
-5. Add the Linux app to the Kernel 
+5. Add some dependencies for compilation
+
+  * Right Click `matrix_multiplication_demo_linux_app` folder
+  * C/C++ Build Settings > C/C++ Build > Settings
+
+      a. Under **ARM v7 Linux gcc compiler > Directories** add the output of following shell command:
+
+      ```shell
+      echo $MZPL/os/project/mz_basic/build/tmp/sysroots/plnx_arm/usr/include 
+      ```
+  
+      b. Under **ARM v7 Linux gcc linker > Miscellaneus** add the output of following shell command:
+
+      ```shell
+      echo -lpthread --sysroot=$MZPL/os/project/mz_basic/build/tmp/sysroots/plnx_arm
+      ```
+      to the field **Linker Flags**.
+ 
+      c. Under *ARM v7 Linux gcc linker > Libraries** add the outputs of following shell commands:
+      ```shell
+      echo $MZPL/os/project/mz_basic/build/tmp/sysroots/plnx_arm/usr/lib 
+      ``` 
+      ```shell
+      echo $MZPL/os/project/mz_basic/build/tmp/sysroots/plnx_arm/lib 
+      ``` 
+
+6. Go back to a **shell** and add the Linux app to the Kernel 
       
       ```shell
       cd $PLMZ/os/project/mz_base
